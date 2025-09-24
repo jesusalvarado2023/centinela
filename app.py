@@ -21,14 +21,14 @@ FEATURE_COLUMNS = [
 
 # --- Configuración de la app ---
 st.set_page_config(page_title="Centinela", layout="wide")
-st.title("Predicción con Modelos de Machine Learning")
+st.title("Pruebas de Predicción")
 
 st.sidebar.header("Configuración")
 
 # --- Selección de modelo ---
 modelo_opcion = st.sidebar.selectbox(
     "Selecciona el modelo:",
-    ["rfe5_model.joblib", "rfe8_model.joblib", "rfe12_model.joblib"]
+    ["./models/rfe5_model.joblib", "./models/rfe8_model.joblib", "./models/rfe12_model.joblib"]
 )
 
 # Cargar modelo
